@@ -1,0 +1,9 @@
+# Simulácia scraperu pre Ticketmaster (len základná štruktúra)
+def fetch_events():
+    # Tu by išiel reálny scraping cez requests, BeautifulSoup alebo Playwright
+    return [
+        {"name": "Taylor Swift - London", "date": "2025-09-21", "city": "London", "price": 140,
+         "attractiscore": 88, "recommendation": "Kúpiť"},
+        {"name": "Ed Sheeran - Berlin", "date": "2025-09-28", "city": "Berlin", "price": 110,
+         "attractiscore": 72, "recommendation": "Nekúpiť"},
+    ]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Ticket Reselling Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🎟️ Aktuálne podujatia</h1>
+    <table>
+        <tr>
+            <th>Názov</th>
+            <th>Dátum</th>
+            <th>Mesto</th>
+            <th>Cena (€)</th>
+            <th>AttractiScore</th>
+            <th>Odporúčanie</th>
+        </tr>
+        {% for event in events %}
+        <tr>
+            <td>{{ event.name }}</td>
+            <td>{{ event.date }}</td>
+            <td>{{ event.city }}</td>
+            <td>{{ event.price }}</td>
+            <td>{{ event.attractiscore }}</td>
+            <td>{{ event.recommendation }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
